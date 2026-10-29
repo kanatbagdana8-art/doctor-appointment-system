@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дәрігерге жазылу | MedBook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">MedBook</a>
+
+    <nav>
+        <a href="index.html">Басты бет</a>
+        <a href="doctors.html">Дәрігерлер</a>
+        <a href="login.html">Кіру</a>
+    </nav>
+</header>
+
+<main class="auth-container">
+    <section class="form-card appointment-card">
+        <h1>Дәрігерге жазылу</h1>
+        <p>Қабылдауға жазылу үшін төмендегі форманы толтырыңыз.</p>
+
+        <form action="#" method="post">
+
+            <label for="fullname">Аты-жөніңіз</label>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Аты-жөніңізді енгізіңіз"
+                required
+            >
+
+            <label for="phone">Телефон нөмірі</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+7 700 000 00 00"
+                required
+            >
+
+            <label for="doctor">Дәрігерді таңдаңыз</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">Дәрігерді таңдаңыз</option>
+                <option value="cardiologist">Айдос Нұрланұлы — Кардиолог</option>
+                <option value="therapist">Айнұр Серікқызы — Терапевт</option>
+                <option value="neurologist">Марат Әлиев — Невролог</option>
+                <option value="pediatrician">Дана Қайратқызы — Педиатр</option>
+            </select>
+
+            <label for="date">Қабылдау күні</label>
+            <input
+                type="date"
+                id="date"
+                name="date"
+                required
+            >
+
+            <label for="time">Қабылдау уақыты</label>
+            <select id="time" name="time" required>
+                <option value="">Уақытты таңдаңыз</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+            </select>
+
+            <label for="message">Қосымша ақпарат</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Қажет болса, хабарлама қалдырыңыз"
+            ></textarea>
+
+            <button type="submit" class="btn btn-full">
+                Қабылдауға жазылу
+            </button>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© 2026 MedBook. Барлық құқықтар қорғалған.</p>
+</footer>
+
+</body>
+</html>
